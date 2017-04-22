@@ -1,0 +1,9 @@
+#!/bin/bash
+# Simple test de stress TCPSYN con nping del paquete https://nmap.org
+# (c) hackingyseguridad.com 2017
+# Uso: ./tcpsyn IP puerto_TCP
+
+echo Uso: ./tcpsyn IP puertoTCP
+OIFS=$IFS;
+IFS=$'\n';
+nping $1 -p $2 --tcp-connect -ttl 254 --rate=25 -c 999999999
