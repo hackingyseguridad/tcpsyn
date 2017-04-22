@@ -1,5 +1,5 @@
 #!/bin/bash
-# Simple test de stress TCPSYN con nping del paquete https://nmap.org
+# Simple test de stress TCPSYN con nping del paquete https://nmap.org/nping
 # (c) hackingyseguridad.com 2017
 # Uso: ./tcpsyn IP puerto_TCP
 
