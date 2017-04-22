@@ -6,4 +6,4 @@
 echo Uso: ./tcpsyn IP puertoTCP
 OIFS=$IFS;
 IFS=$'\n';
-nping $1 -p $2 --tcp-connect -ttl 254 --rate=25 -c 999999999
+nping $1 -p $2 --tcp-connect -ttl 254 --rate=9 -c 999999999
