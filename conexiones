@@ -1,0 +1,5 @@
+#!/bin/sh
+echo 
+echo "Uso: ./conexiones <puerto_TCP>"
+echo "Muestra numero de conexiones e IP"
+netstat -plan|grep :$1 | awk {'print $5'} | cut -d: -f 1 | sort | uniq -c
