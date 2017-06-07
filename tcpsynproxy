@@ -1,4 +1,5 @@
 #!/bin/bash
+# http://proxy-daily.com/
 echo 
 echo "Uso: ./tcpsynproxy <url>"
 echo "parar ataque con Control + C"
