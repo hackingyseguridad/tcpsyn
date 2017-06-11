@@ -19,9 +19,7 @@ netstat -anp |grep ‘tcp|udp’ | awk ‘{print $5}’ | cut -d: -f1 | sort | u
 
 netstat -ntu | grep ESTAB | awk ‘{print $5}’ | cut -d: -f1 | sort | uniq -c | sort -nr
 
+netstat -plan|grep :80 | awk {'print $5'} | cut -d: -f 1 | sort | uniq -c
+
 netstat -plan|grep :80|awk {‘print $5’}|cut -d: -f 1|sort|uniq -c|sort -nk 1
-
-
-
-
 
