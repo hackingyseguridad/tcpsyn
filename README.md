@@ -1,4 +1,4 @@
-# tcpsyn con nping
+# ./tcpsyn <IP puerto>
 
 # ./conexiones <puerto_TCP>
 Para ver las conexiones activas
