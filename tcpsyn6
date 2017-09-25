@@ -1,0 +1,10 @@
+#!/bin/bash
+# Simple test de stress TCPSYN IPv6 con nping del paquete https://nmap.org/nping
+# Las conexiones tcp establecidas duraran abiertas 3 segundos
+# (C) hackingyseguridad.com 2017
+# Uso: ./tcpsyn6 IPv6 puerto_TCP
+echo
+echo Uso: ./tcpsyn6 IPv6 puertoTCP
+OIFS=$IFS;
+IFS=$'\n';
+nping -6 $1 -p $2 --tcp-connect --flags syn,ack,psh --rate=9 -c 999999999
