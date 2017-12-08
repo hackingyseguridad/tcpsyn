@@ -4,6 +4,14 @@
 # (C) hackingyseguridad.com 2017
 # Uso: ./tcpsyn6 IPv6 puerto_TCP
 echo
+cat << EOF
+####################################
+#                                  #
+# TEST ESTRESS CONEXIONES TCP SYN  #
+#                                  #
+####################################
+EOF
+echo
 echo Uso: ./tcpsyn6 IPv6 puertoTCP
 OIFS=$IFS;
 IFS=$'\n';
