@@ -3,7 +3,15 @@
 # Las conexiones tcp establecidas duraran abiertas 5 segundos
 # (C) hackingyseguridad.com 2017
 # Uso: ./tcpsyn IP puerto_TCP
-
+echo
+cat << EOF
+####################################
+#                                  #
+# TEST ESTRESS CONEXIONES TCP SYN  #
+#                                  #
+####################################
+EOF
+echo
 echo Uso: ./tcpsyn IP puertoTCP
 OIFS=$IFS;
 IFS=$'\n';
