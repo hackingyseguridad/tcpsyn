@@ -1,0 +1,3 @@
+#!/bin/bash
+#by hackingyseguridad.com
+echo "Conexiones tcp/udp activas: " &ss -tu |wc -l
