@@ -1,0 +1,3 @@
+!#/bin/bash
+echo "Uso.: conex2 puerto_tcp"
+netstat -an | grep :$1 | sort
