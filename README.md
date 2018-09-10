@@ -1,10 +1,22 @@
 # Agotamiento de ventanas TCP en dispostivo remoto
 #
-# ./tcpsyn <IP puerto>
-# ./tcpsyn6 <IPv6 puerto>
+Instalacion:
 
-# ./conexiones <puerto_TCP>
-Para ver las conexiones activas
+#apt-get install nmap
+
+git clone https://github.com/hackingyseguridad/tcpsyn
+
+sh instalar.sh
+
+./tcpsyn <IP puerto>
+
+./tcpsyn6 <IPv6 puerto>
+
+Uso:
+
+./conexiones <puerto_TCP>
+
+Para ver las conexiones TCP activas establecidas
 
 netstat -na
 
