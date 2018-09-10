@@ -40,5 +40,6 @@ netstat -plan|grep :80|awk {‘print $5’}|cut -d: -f 1|sort|uniq -c|sort -nk 1
 
 #www.hackingyseguridad.com
 #
-#tcp syn (c) 2017 hackingyseguridad .com
+#tcpsyn (c) 2017 hackingyseguridad .com
+
 
