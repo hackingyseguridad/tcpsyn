@@ -1,3 +1,5 @@
+# Agotamiento de ventanas TCP en dispostivo remoto
+#
 # ./tcpsyn <IP puerto>
 # ./tcpsyn6 <IPv6 puerto>
 
@@ -25,5 +27,6 @@ netstat -plan|grep :80 | awk {'print $5'} | cut -d: -f 1 | sort | uniq -c
 netstat -plan|grep :80|awk {‘print $5’}|cut -d: -f 1|sort|uniq -c|sort -nk 1
 
 #www.hackingyseguridad.com
+#
 #tcp syn (c) 2017 hackingyseguridad .com
 
