@@ -1,8 +1,8 @@
-# Agotamiento de ventanas TCP en dispostivo remoto
+# tcpsyn Agotamiento de ventanas TCP en dispostivo remoto
 #
-Instalacion:
+# Instalacion:
 
-#apt-get install nmap
+apt-get install nmap
 
 git clone https://github.com/hackingyseguridad/tcpsyn
 
@@ -12,7 +12,7 @@ sh instalar.sh
 
 ./tcpsyn6 <IPv6 puerto>
 
-Uso:
+# Uso:
 
 ./conexiones <puerto_TCP>
 
@@ -38,8 +38,8 @@ netstat -plan|grep :80 | awk {'print $5'} | cut -d: -f 1 | sort | uniq -c
 
 netstat -plan|grep :80|awk {‘print $5’}|cut -d: -f 1|sort|uniq -c|sort -nk 1
 
-#www.hackingyseguridad.com
+# www.hackingyseguridad.com
 #
-#tcpsyn (c) 2017 hackingyseguridad .com
+# tcpsyn (c) 2017 hackingyseguridad .com
 
 
