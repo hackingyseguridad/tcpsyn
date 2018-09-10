@@ -8,15 +8,15 @@ git clone https://github.com/hackingyseguridad/tcpsyn
 
 sh instalar.sh
 
+# Uso:
+
 ./tcpsyn <IP puerto>
 
 ./tcpsyn6 <IPv6 puerto>
 
-# Uso:
+# Para ver las conexiones TCP activas establecidas
 
 ./conexiones <puerto_TCP>
-
-Para ver las conexiones TCP activas establecidas
 
 netstat -na
 
