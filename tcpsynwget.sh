@@ -5,6 +5,4 @@
 # Ejecutar ./tcpsynwget.sh
 # Para parar Control + C
 
-while true; do
-        wget -O /dev/null web.hackingyseguridad.com
-done
+while : ; do; wget -O /dev/null web.hackingyseguridad.com; done;
