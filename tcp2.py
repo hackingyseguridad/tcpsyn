@@ -8,7 +8,7 @@ import socket
 from scapy.all import *
 
 # apreton de manos TCP en 3 pasos
-ip=IP(dst="81.47.192.13")
+ip=IP(dst="104.16.88.120")
 SYN=TCP(sport=80, flags="S", seq=100, dport=80)
 SYNACK=sr1(ip/SYN)
 
@@ -18,5 +18,5 @@ send(ip/ACK)
 
 # Peticion
 PUSH = TCP(sport=80, dport=80, flags='PA', seq=101, ack=my_ack)
-payload = "GET / HTTP/1.1\r\nHost: 81.47.192.13\r\nConnection: keep-alive\r\nCache-Control: max-age=0\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\r\nAccept-Language: en-US,en;q=0.8\r\n\r\n"
+payload = "GET / HTTP/1.1\r\nHost: 104.16.88.120\r\nConnection: keep-alive\r\nCache-Control: max-age=0\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\r\nAccept-Language: en-US,en;q=0.8\r\n\r\n"
 reply= sr1(ip/PUSH/payload, timeout=10)
