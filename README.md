@@ -279,7 +279,7 @@ sh instalar.sh
 
 ./tcpsyn6 <IPv6 puerto>
 
-# Para ver las conexiones TCP activas establecidas
+### Para ver las conexiones TCP activas establecidas
 
 ./conexiones <puerto_TCP>
 
