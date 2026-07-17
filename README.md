@@ -252,7 +252,7 @@ apt-get install -y net-tools iproute2 tcpdump nstat
 
 ---
 
-## 5. Referencias
+### 5. Referencias
 
 - RFC 793 / RFC 9293 — Transmission Control Protocol
 - NVD — CVE-2019-11477 (SACK Panic)
